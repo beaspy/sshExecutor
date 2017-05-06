@@ -11,8 +11,8 @@ import com.tlb.util.Utility;
 public class SSHTest {
 
 	private String ip = Utility.getProps("/config.properties", "app1");
-	private String name = "root";
-	private String pwd = "admin@cqyx2015";
+	private String name = "1";
+	private String pwd = "1";
 	private SSHCommandExecutor sshExecutor = new SSHCommandExecutor(ip, name, pwd);
 	
 	@Test
