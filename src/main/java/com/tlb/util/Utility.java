@@ -9,6 +9,8 @@ import java.util.Date;
 import java.util.EmptyStackException;
 import java.util.Properties;
 import java.util.Random;
+import java.util.Set;
+import java.util.TreeSet;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -228,6 +230,24 @@ public class Utility {
 	}
 
 
+	public static String getPropKey(String uri) {
+		String str = "";
+		InputStream is = (new Utility()).getClass().getResourceAsStream(uri);
+		Properties props = new Properties();
+		try {
+			props.load(is);
+			Set<Object> keys = new TreeSet<Object>();
+			keys.addAll(props.keySet());
+			for (Object object : keys) {
+				str += (String) object + "|";
+			}
+			is.close();
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+		return str;
+	}
+	
 	public static String getProps(String uri, String propName) {
 		String propValue = "";
 		InputStream is = (new Utility()).getClass().getResourceAsStream(uri);
