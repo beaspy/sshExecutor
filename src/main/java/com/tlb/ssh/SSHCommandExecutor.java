@@ -39,7 +39,7 @@ public class SSHCommandExecutor {
             Session session = jsch.getSession(username, ipAddress, DEFAULT_SSH_PORT);   
             session.setPassword(password);   
             session.setUserInfo(userInfo);   
-           /* Properties config = new Properties();
+            /* Properties config = new Properties();
             //设置 SSH 连接时不进行公钥确认
   			config.put("StrictHostKeyChecking", "no");
   			session.setConfig(config);*/
