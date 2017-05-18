@@ -28,7 +28,7 @@ public class SSHCommandExecutor {
         this.ipAddress = ipAddress;   
         this.username = username;   
         this.password = password;   
-    }   
+    }
      
     public int execute(final String command) {   
         int returnCode = 0;   
