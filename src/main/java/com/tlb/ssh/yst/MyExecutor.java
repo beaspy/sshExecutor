@@ -25,6 +25,7 @@ public class MyExecutor {
 	
 	private static void input(){
 		Scanner sc = new Scanner(System.in);
+		
 		//app
 		String serverArray = null;
 		while(null == serverArray){
@@ -45,7 +46,7 @@ public class MyExecutor {
 					return;
 				}
 			}
-		}
+		}		
 		
 		//executor
 		while(!("tail".equals(executor) || "restart".equals(executor))){
