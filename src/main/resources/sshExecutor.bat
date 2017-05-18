@@ -1,4 +1,5 @@
 @echo off
+
 chcp 65001
 
 set JAVA_HOME=%JAVA_HOME%
