@@ -40,7 +40,7 @@ public class MyExecutor {
 			server = serverArray;
 		}else{
 			while(!serverArray.contains(server)){
-				System.out.print(serverArray + "|0-back| choose server:");
+				System.out.print(serverArray + "|0_return| choose server:");
 				server = sc.nextLine();
 				if("0".equals(server)){
 					return;
@@ -50,7 +50,7 @@ public class MyExecutor {
 		
 		//executor
 		while(!("tail".equals(executor) || "restart".equals(executor))){
-			System.out.print("tail|restart|0-back| choose executor:");
+			System.out.print("tail|restart|0_return| choose executor:");
 			executor = sc.nextLine();
 			if("0".equals(executor)){
 				server = "0";
