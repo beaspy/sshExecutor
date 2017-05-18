@@ -13,7 +13,8 @@ import com.jcraft.jsch.Session;
  * This class provide interface to execute command on remote Linux. 
  */   
      
-public class SSHCommandExecutor {   
+public class SSHCommandExecutor {
+
     private String ipAddress;   
      
     private String username;   
