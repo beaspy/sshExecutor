@@ -21,7 +21,6 @@ public class MyExecutor {
 		}else if("restart".equals(executor)){
 			sshExecutor.execute("/opt/restart.sh /opt/tomcat-" + app + "/");
 		}
-		
 	}
 	
 	private static void input(){
