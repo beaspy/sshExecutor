@@ -6,8 +6,8 @@ import java.util.Map;
 public class AppServer {
 	
 	public static final Map<String, String> server = new HashMap<String, String>();
-	public static final String name = "";
-	public static final String pwd = "";
+	public static final String name = "root";
+	public static final String pwd = "admin@cqyx2015";
 
 	private AppServer() {
 		server.put("1", "172.31.5.1");
