@@ -15,7 +15,6 @@ public class MyExecutor {
 		while("0".equals(server) || "0".equals(executor)){
 			input();
 		}
-		
 		SSHCommandExecutor sshExecutor = new SSHCommandExecutor(AppServer.server.get(server), AppServer.name, AppServer.pwd);
 		if("tail".equals(executor)){
 			sshExecutor.execute("tail -f /opt/tomcat-" + app + "/logs/catalina.out" + " -f /opt/tomcat-" + app + "/logs/catalina.out.1");
