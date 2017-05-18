@@ -72,8 +72,7 @@ public class SSHCommandExecutor {
             channel.disconnect();   
             session.disconnect();   
         } catch (JSchException e) {   
-            // TODO Auto-generated catch block   
-            e.printStackTrace();   
+            e.printStackTrace();
         } catch (Exception e) {   
             e.printStackTrace();   
         }   
