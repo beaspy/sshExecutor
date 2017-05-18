@@ -23,7 +23,4 @@ public class AppServer {
 		return appServer;
 	}
 	
-	public static void main(String[] args) {
-		System.out.println(AppServer.server);
-	}
 }
