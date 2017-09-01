@@ -21,7 +21,7 @@ public class MyExecutor {
 		}
 		SSHCommandExecutor sshExecutor = new SSHCommandExecutor(AppServer.server.get(server), AppServer.name, AppServer.pwd);
 		if("tail".equals(executor)){
-			sshExecutor.execute("tail -f /opt/tomcat-" + app + "/logs/catalina.out" + " -f /opt/tomcat-" + app + "/logs/catalina.out.1");
+			sshExecutor.execute("tail -f /opt/tomcat-" + app + "/logs/catalina.*");
 		}else if("restart".equals(executor)){
 			sshExecutor.execute("/opt/restart.sh /opt/tomcat-" + app + "/");
 		}else if("update".equals(executor)){
